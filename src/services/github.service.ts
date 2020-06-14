@@ -8,7 +8,7 @@ class GithubApiService {
     }
 
     async searchForUser(searchTerm: string, page: number = 1, pageSize: number = 25) {
-        const URL = `${this.GITHUB_API_URL}?searchTerm=${encodeURIComponent(searchTerm)}&page=${page}&pageSize=${pageSize}`;
+        const URL = `${this.GITHUB_API_URL}/search/users?searchTerm=${encodeURIComponent(searchTerm)}&page=${page}&pageSize=${pageSize}`;
 
         if(this.SEARCH_CACHE[URL]){
             return this.SEARCH_CACHE[URL];
