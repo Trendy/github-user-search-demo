@@ -1,0 +1,18 @@
+:host {
+  display: block;
+  margin: 0px auto;
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+}
+
+.navigation span:first-of-type {
+  grid-column-start: 1;
+}
+
+.navigation span:last-of-type {
+  grid-column-start: 3;
+  text-align: right;
+}

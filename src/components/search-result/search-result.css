@@ -1,0 +1,57 @@
+:host {
+  display: block;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+
+* {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.search-result-container {
+  display:grid;
+  grid-template-columns: 58px auto 150px;
+}
+
+.search-result-container img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  grid-column-start: 1;
+}
+
+.user-info-container {
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 2;
+}
+
+.user-name {
+  font-size: 16px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 700;
+  padding-right: 8px;
+}
+
+.user-login {
+  font-size: 14px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-bio-container {
+  display:flex;
+  flex-direction: column;
+}
+
+.user-bio {
+  font-size: 12px;
+}

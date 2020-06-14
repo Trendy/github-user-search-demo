@@ -1,0 +1,15 @@
+:host {
+  display: block;
+}
+
+* {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+input {
+  display: inline-block;
+  border: 1px solid #000;
+  background-color:transparent;
+  box-shadow: none;
+  padding: 6px;
+}
