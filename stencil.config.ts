@@ -4,7 +4,7 @@ import { Config } from '@stencil/core';
 
 export const config: Config = {
   globalStyle: 'src/global/app.css',
-  globalScript: 'src/global/app.ts',
+  globalScript: process.env.NODE_ENV === 'local' ? 'src/global/app.local.ts' : 'src/global/app.ts',
   taskQueue: 'async',
   outputTargets: [
     {
